@@ -78,6 +78,7 @@
 		<ItemGroup>
 			<BuildSource Include="$(TargetDir)/*.*" />
 		</ItemGroup>
+		<Message Importance="high" Text="Deploying to $(WorkshopPath)" />
 		<MakeDir Directories="$(WorkshopPath)" ContinueOnError="true" />
 		<Copy SourceFiles="@(BuildSource)" DestinationFolder="$(WorkshopPath)" />
 	</Target>

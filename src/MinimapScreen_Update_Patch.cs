@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace MiniMapMoveCamera
 {
-    [HarmonyPatch(typeof(MinimapScreen), nameof(MinimapScreen.Update))]
+    [HarmonyPatch(typeof(MinimapScreen), nameof(MinimapScreen.LateUpdate))]
     public static class MinimapScreen_Update_Patch
     {
         private static Stopwatch DoubleClickTimer = new Stopwatch();

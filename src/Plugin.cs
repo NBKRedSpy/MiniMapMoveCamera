@@ -26,7 +26,6 @@ namespace MiniMapMoveCamera
 
         public Plugin(HookEvents hookEvents, bool isBeta) : base(hookEvents, isBeta)
         {
-
             Directory.CreateDirectory(ConfigDirectories.ModPersistenceFolder);
 
             Config = ModConfig.LoadConfig(ConfigDirectories.ConfigPath, Logger);

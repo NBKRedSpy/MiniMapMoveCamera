@@ -57,7 +57,14 @@ Thanks!
 
 Source code is available on GitHub at https://github.com/NBKRedSpy/MiniMapMoveCamera
 
-[h1]Credis[/h1]
+[h1]Credits[/h1]
 [list]
 [*]Special thanks to Crynano for his excellent Mod Configuration Menu.
+[/list]
+
+[h1]Change Log[/h1]
+
+[h2]1.1.0[/h2]
+[list]
+[*]0.9.6 compatibility.
 [/list]

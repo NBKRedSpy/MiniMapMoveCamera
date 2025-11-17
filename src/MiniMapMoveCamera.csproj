@@ -67,13 +67,6 @@
 	  <ProjectReference Include="..\..\bootstrap\src\MiniMapMoveCamera_Bootstrap.csproj" />
 	</ItemGroup>
 
-	<!--Clean out the Steam Workshop folder to prevent artifacts such as references no longer used-->
-	<Target BeforeTargets="PostBuildEvent" Condition="'$(SteamId)'!=''" Name="WorkshopFolderClean">
-		<ItemGroup>
-			<FilesToDelete Include="$(WorkshopPath)*" />
-		</ItemGroup>
-		<Delete Files="@(FilesToDelete)" />
-	</Target>
 	<Target Name="NoSteamIdMessage" Condition="'$(SteamId)'==''" AfterTargets="PostBuildEvent">
 		<Message Importance="high" Text="The SteamId is not set in the project.  Aborting Steam Workshop folder deployment." />
 	</Target>
@@ -92,6 +85,8 @@
 		<Message Importance="high" Text="ProjectDir folder -&gt; $(ProjectDir)" />
 		<Message Importance="high" Text="Workshop folder: $(VersionWorkshopPath)" />
 		<MakeDir Directories="$(VersionWorkshopPath)" ContinueOnError="true" />
+
 		<Copy SourceFiles="@(BuildSource)" DestinationFolder="$(VersionWorkshopPath)" />
+		<Delete Files="$(VersionWorkshopPath)/*bootstrap.dll" />
 	</Target>
 </Project>

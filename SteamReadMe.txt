@@ -1,6 +1,8 @@
 [h1]Quasimorph MiniMapMoveCamera[/h1]
 
 
+Note that the game now has this functionality.  The only difference is that the game instantly jumps to the location while this mod moves the view to the location quickly.
+
 Adds the ability to click the mini map with the middle mouse button to move the view to that location.
 Double click to move to that location and close the map.
 

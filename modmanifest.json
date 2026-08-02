@@ -1,9 +1,0 @@
-{
-  "UniqueModName": "NBKRedSpy_MiniMapMoveCamera",
-  "Assemblies": [
-    "MiniMapMoveCamera.dll"
-  ],
-  "Dependencies": [],
-  "SteamTags": [
-  ]
-}
